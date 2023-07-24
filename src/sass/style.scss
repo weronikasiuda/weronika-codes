@@ -1,0 +1,26 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600&family=Spectral:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap');
+
+
+@import "functions";
+@import "variables";
+
+@import "/Users/weronikas/Desktop/portfolio-weronika/node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "mixins/block-image";
+@import "mixins/button";
+@import "mixins/figure";
+@import "mixins/margin";
+@import "mixins/padding";
+@import "mixins/transition-colors";
+
+@import "base";
+
+// Components
+@import "components/banner";
+@import "components/header";
+@import "components/intro";
+@import "components/logo";

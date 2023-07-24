@@ -1,0 +1,15 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    text-align: start; // left in LTR and right in RTL
+    margin: 1em;
+}
+
+// Restore default margins to blockquote elements without the Bootstrap
+// blockquote class, e.g. in WYSIWYG content.
+blockquote:not([class]),
+blockquote[class=""] {
+    @include margin-x(revert);
+}

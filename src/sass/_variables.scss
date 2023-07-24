@@ -1,0 +1,232 @@
+@use 'sass:math';
+
+// Colors
+$white: #fff;
+$black: #000;
+
+// $gray-100: mix($black, $white, 10%);
+// $gray-200: mix($black, $white, 20%);
+// $gray-300: mix($black, $white, 30%);
+// $gray-400: mix($black, $white, 40%);
+// $gray-500: mix($black, $white, 50%);
+// $gray-600: mix($black, $white, 60%);
+// $gray-700: mix($black, $white, 70%);
+// $gray-800: mix($black, $white, 80%);
+// $gray-900: mix($black, $white, 90%);
+
+// Theme specific colors
+$off-white: #FAFAFA;
+$off-white-secondary: #f2f6fa;
+$honey: #F8C994;
+$peach: #F29F90;
+$orange: #FFA500;
+$pink: #F1B6ac;
+$red: #d83b1f;
+$turquoise: #80CDC8;
+$teal: #018379;
+$blue: #165bbc;
+$light-grey: #D7D7D7;
+$concrete-grey: #565656;
+$charcoal-grey: #232323;
+$off-black: #121615;
+$jet-black: #010101;
+
+//Social icon colors
+
+$dark-blue: #1877f2;
+$fuchsia: #e4405f;
+$light-blue: #1da1f2;
+$marine: #1ab7ea;
+
+// Dominant theme colors
+$primary: $orange;
+$secondary: $pink;
+$tertiary: $honey;
+$quaternary: $turquoise;
+
+// Options
+$enable-responsive-font-sizes: true;
+
+// Spacing
+$spacer: 24px;
+
+// Body
+$body-bg: $white;
+$body-color: $charcoal-grey;
+
+// Links
+$link-color: $charcoal-grey;
+$secondary-link-color: $blue;
+$link-decoration: underline;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// Paragraphs
+// $paragraph-margin-bottom: 1em;
+
+// Grid
+$grid-breakpoints: (
+    xs: 0,
+    smaller: 300px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1280px,
+);
+
+$grid-gutter-width: $spacer;
+
+// Animations
+$transition-duration: 200ms;
+
+// Components
+$border-width: 1px;
+$border-color: $secondary;
+
+$border-radius: 0.25rem;
+$border-radius-lg: 0.5rem;
+$border-radius-sm: 0.125rem;
+
+$box-shadow-sm: 0 0.125rem 0.5rem rgba($black, 0.15);
+$box-shadow: 0 0.25rem 1rem rgba($black, 0.15);
+$box-shadow: 0 0.5rem 1.5rem rgba($black, 0.15);
+
+// Font sizes
+$font-scale: 1.25;
+
+$font-size-0: 1.125rem;
+$font-size-1: $font-size-0 * $font-scale;
+$font-size-2: $font-size-1 * $font-scale;
+$font-size-3: $font-size-2 * $font-scale;
+$font-size-4: $font-size-3 * $font-scale;
+$font-size-5: $font-size-4 * $font-scale;
+$font-size-6: $font-size-5 * $font-scale;
+
+$font-size-minus-1: math.div($font-size-0, $font-scale);
+$font-size-minus-2: math.div($font-size-minus-1, $font-scale);
+
+$font-size-base: $font-size-0;
+
+$font-size-xs: $font-size-minus-2;
+$font-size-sm: $font-size-minus-1;
+$font-size-md: $font-size-base*1.11;
+$font-size-lg: $font-size-1;
+$font-size-xl: $font-size-2;
+$font-size-xxl: $font-size-base*2;
+$font-size-xxxl: $font-size-base*3;
+$font-size-american: $font-size-base*5;
+
+// Typography
+$font-family-sans-serif: 'League Spartan', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-family-secondary: 'Spectral', serif;
+
+$font-weight-lightest: 100;
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+// $font-weight-bolder: $font-weight-bold;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$line-height-lg: 1.25;
+$line-height-sm: $line-height-base;
+
+$h1-font-size: $font-size-4;
+$h2-font-size: $font-size-3;
+$h3-font-size: $font-size-2;
+$h4-font-size: $font-size-1;
+$h5-font-size: $font-size-0;
+$h6-font-size: $font-size-0;
+
+$headings-margin-bottom: math.div($spacer, 2);
+$headings-font-family: null;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: $line-height-lg;
+$headings-color: $charcoal-grey;
+
+$display1-size: $font-size-5;
+$display2-size: $font-size-4;
+$display3-size: $font-size-3;
+$display4-size: $font-size-2;
+
+// $display1-weight: $headings-font-weight;
+// $display2-weight: $headings-font-weight;
+// $display3-weight: $headings-font-weight;
+// $display4-weight: $headings-font-weight;
+// $display-line-height: $headings-line-height;
+
+// $lead-font-size: $font-size-lg;
+// $lead-font-weight: null;
+
+$small-font-size: $font-size-sm;
+
+// $text-muted: $secondary;
+
+// $blockquote-small-color: $secondary;
+// $blockquote-small-font-size: $font-size-sm;
+// $blockquote-font-size: $font-size-lg;
+
+// $hr-border-color: $border-color;
+// $hr-border-width: $border-width;
+
+// Buttons
+$btn-padding-y: 1rem;
+$btn-padding-x: 1.5rem;
+$btn-font-size: $font-size-base;
+$btn-line-height: $line-height-base;
+
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 0.75rem;
+$btn-font-size-sm: $font-size-sm;
+$btn-line-height-sm: $line-height-base;
+
+$btn-font-family: null;
+$btn-font-weight: $font-weight-bold;
+
+$btn-border-radius: $border-radius;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+$btn-transition: color $transition-duration ease,
+    background-color $transition-duration ease,
+    border-color $transition-duration ease,
+    box-shadow $transition-duration ease;
+
+// Forms
+// $input-padding-y: 0.75rem;
+// $input-padding-x: 0.75rem;
+
+// $input-padding-y-sm: 0.75rem;
+// $input-padding-x-sm: 0.75rem;
+
+// $input-bg: $white;
+// $input-disabled-bg: $gray-200;
+
+// $input-color: $body-color;
+// $input-border-color: $border-color;
+// $input-border-width: $border-width;
+// $input-box-shadow: 0;
+
+// $input-border-radius: $border-radius-sm;
+// $input-border-radius-lg: $border-radius-sm;
+// $input-border-radius-sm: $border-radius-sm;
+
+// Custom variables
+$nav-breakpoint-expand: lg;
+
+$nav-button-section-size: 48px;
+$nav-button-link-size: 100%;
+$nav-button-icon-size: 32px;

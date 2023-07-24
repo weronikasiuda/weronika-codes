@@ -1,0 +1,38 @@
+// Return a multiple of the spacer variable rounded to the nearest whole pixel.
+@function spacer($factor: 1) {
+    $spacer: 24px !default;
+
+    @return math.floor($factor * $spacer);
+}
+
+// Return the previous breakpoint key (if it exists).
+@function previous-breakpoint($breakpoint) {
+    @if not map.has-key($grid-breakpoints, $breakpoint) {
+        @return null;
+    }
+
+    $grid-keys: map.keys($grid-breakpoints);
+    $index: list.index($grid-keys, $breakpoint);
+
+    @if $index == 1 {
+        @return null;
+    }
+
+    @return list.nth($grid-keys, $index - 1);
+}
+
+// Return the next breakpoint key (if it exists).
+@function next-breakpoint($breakpoint) {
+    @if not map.has-key($grid-breakpoints, $breakpoint) {
+        @return null;
+    }
+
+    $grid-keys: map.keys($grid-breakpoints);
+    $index: list.index($grid-keys, $breakpoint);
+
+    @if $index == list.length($grid-keys) {
+        @return null;
+    }
+
+    @return list.nth($grid-keys, $index + 1);
+}
