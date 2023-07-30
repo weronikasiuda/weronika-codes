@@ -5,6 +5,7 @@ html {
 body {
     text-align: start; // left in LTR and right in RTL
     margin: 1em;
+    letter-spacing: $letter-spacing;
 }
 
 // Restore default margins to blockquote elements without the Bootstrap

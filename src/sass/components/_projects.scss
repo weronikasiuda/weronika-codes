@@ -1,0 +1,17 @@
+.projects {
+    @include padding-y(spacer(3));
+
+    &__title {
+        @include padding-y(spacer(2));
+        font-size: $font-size-xxxl;
+        text-align: center;
+    }
+}
+
+.icon {
+    fill:$secondary;
+}
+
+.icon-path {
+    stroke-dasharray: 10;
+}

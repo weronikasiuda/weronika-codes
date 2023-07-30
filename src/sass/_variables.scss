@@ -15,34 +15,25 @@ $black: #000;
 // $gray-900: mix($black, $white, 90%);
 
 // Theme specific colors
+$white: #ffff;
 $off-white: #FAFAFA;
-$off-white-secondary: #f2f6fa;
-$honey: #F8C994;
-$peach: #F29F90;
-$orange: #FFA500;
-$pink: #F1B6ac;
-$red: #d83b1f;
-$turquoise: #80CDC8;
-$teal: #018379;
-$blue: #165bbc;
-$light-grey: #D7D7D7;
-$concrete-grey: #565656;
-$charcoal-grey: #232323;
+$wild-strawberry: #FF3186;
+$bittersweet: #FF725C;
+$supernova: #FFB437;
+$golden-glow: #F9D388;
+$mona-lisa:#FF8F8F;
 $off-black: #121615;
 $jet-black: #010101;
 
 //Social icon colors
 
-$dark-blue: #1877f2;
-$fuchsia: #e4405f;
-$light-blue: #1da1f2;
-$marine: #1ab7ea;
+
 
 // Dominant theme colors
-$primary: $orange;
-$secondary: $pink;
-$tertiary: $honey;
-$quaternary: $turquoise;
+$primary: $mona-lisa;
+$secondary: $golden-glow;
+$tertiary: $supernova;
+$quaternary: $bittersweet;
 
 // Options
 $enable-responsive-font-sizes: true;
@@ -52,11 +43,11 @@ $spacer: 24px;
 
 // Body
 $body-bg: $white;
-$body-color: $charcoal-grey;
+$body-color: $off-black;
 
 // Links
-$link-color: $charcoal-grey;
-$secondary-link-color: $blue;
+$link-color: $off-black;
+$secondary-link-color: blue;
 $link-decoration: underline;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
@@ -127,8 +118,10 @@ $font-size-american: $font-size-base*5;
 
 // Typography
 $font-family-sans-serif: 'League Spartan', sans-serif;
-$font-family-base: $font-family-sans-serif;
-$font-family-secondary: 'Spectral', serif;
+$font-family-serif: 'Spectral', serif;
+$font-family-base: $font-family-serif;
+$font-family-secondary: $font-family-sans-serif;
+
 
 $font-weight-lightest: 100;
 $font-weight-lighter: 200;
@@ -138,7 +131,7 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 // $font-weight-bolder: $font-weight-bold;
 
-$font-weight-base: $font-weight-normal;
+$font-weight-base: $font-weight-light;
 $line-height-base: 1.5;
 
 $line-height-lg: 1.25;
@@ -155,7 +148,7 @@ $headings-margin-bottom: math.div($spacer, 2);
 $headings-font-family: null;
 $headings-font-weight: $font-weight-bold;
 $headings-line-height: $line-height-lg;
-$headings-color: $charcoal-grey;
+$headings-color: $off-black;
 
 $display1-size: $font-size-5;
 $display2-size: $font-size-4;
@@ -172,6 +165,8 @@ $display4-size: $font-size-2;
 // $lead-font-weight: null;
 
 $small-font-size: $font-size-sm;
+
+$letter-spacing: 1px;
 
 // $text-muted: $secondary;
 

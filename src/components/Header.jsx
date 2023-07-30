@@ -12,6 +12,13 @@ const Header = () => (
             <span className="logo__element">S</span>
         </div>
     </Col>
+    {/* <Col>
+        <div className="social">
+            <span className="social__icon">W</span>
+            <span className="social__icon">S</span>
+            <span className="social__icon">S</span>
+        </div>
+    </Col> */}
 </Row>
 </Container>
 
